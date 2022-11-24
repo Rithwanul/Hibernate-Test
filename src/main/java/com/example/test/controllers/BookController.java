@@ -2,8 +2,6 @@ package com.example.test.controllers;
 
 import com.example.test.models.Book;
 import com.example.test.repositories.BookRepository;
-import com.example.test.service.BookService;
-import javafx.geometry.Pos;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
