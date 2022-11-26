@@ -8,12 +8,19 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.logging.Level;
+import java.util.logging.LogRecord;
+import java.util.logging.Logger;
+
 @RestController
-@RequestMapping("/book")
+@RequestMapping("api/book")
 public class BookController {
 
     @Autowired
     private BookRepository bookRepository;
+
+
+    private Logger logger = Logger.getLogger("com.simple.test");
 
     @PostMapping("/")
     public Book save(@RequestBody Book book) {
